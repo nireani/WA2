@@ -1,0 +1,19 @@
+{
+  "name": "wa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "city.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebar": "^1.0.0",
+    "jquery": "^3.4.1",
+    "mongoose": "^5.9.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

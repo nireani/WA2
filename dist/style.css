@@ -1,0 +1,29 @@
+body{
+    background-image:url('https://media.giphy.com/media/9pffrT1fatfOg/giphy.gif');
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: auto;
+    width: auto;
+    }
+
+.city {               
+    
+    background-color: rgba(247, 247, 247, 0.5);
+   
+   
+}
+
+.name{
+    padding-top: 20vw;
+text-align: center;
+}
+
+.profile-pic{
+    text-align: center;
+margin-inline-start: 20vw;
+}
+
+.temp{
+    text-align: center; 
+}

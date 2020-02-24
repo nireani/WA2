@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script src="https://kit.fontawesome.com/519f39c2f0.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="Search"></div>
+    <input id="input" type="text">
+    <button id="Searchb">search</button>
+    <div class="container"></div>
+
+
+    <script id="WAtemplate" type="text/x-handlebars-template">
+    <div>
+        {{#each data}}
+<div class="city">
+        
+        <h2 class="name" data-name=`{{name}}` >{{name}}</h2>
+        <span class="temp">{{temperature}}°</span>
+        <span class="con">{{condition}}</span>
+       <span> <img class="profile-pic" src="http://openweathermap.org/img/wn/{{conditionPic}}@2x.png" alt="img"></span>
+    {{#if _id}}
+        <i class="fas fa-minus"></i>
+    {{else}}
+        <i class="fas fa-plus"></i>
+    {{/if}}
+            
+ </div>
+    {{/each}}
+        
+    </div>
+  </script>
+
+    <script src="/handlebars/dist/handlebars.js"></script>
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="Render.js"></script>
+    <script src="APImanager.js"></script>
+    <script src="main.js"></script>
+    </body>
+
+</html>
